@@ -25,7 +25,7 @@ int main(){
     scanf("%s", Codigo1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", Nome1);
+    scanf(" %[^\n]", Nome1); // Pedi ajuda de um amigo para conseguir adicionar espaços sem utilização do Fgets ou outras ferramentas não vistas em aula.
 
     printf("Digite a quantidade de pessoas(Ex: 1,5 para 1.500,000): \n");
     scanf("%f", &Populacao1);
@@ -51,7 +51,7 @@ int main(){
     scanf("%s", Codigo2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", Nome2);
+    scanf(" %[^\n]", Nome2); 
 
     printf("Digite a quantidade de pessoas(Ex: 1,5 para 1.500,000): \n");
     scanf("%f", &Populacao2);
