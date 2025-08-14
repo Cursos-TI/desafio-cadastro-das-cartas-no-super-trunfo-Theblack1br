@@ -1,18 +1,9 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(){
+    setlocale(LC_ALL, "Portuguese_Brazil");
 
-    /* Algumas considerações:
-
-         Tive dificuldade com relação ao iten "nome da cidade", pois queria que pudesse digitar e dar espaços 
-       para digitar mais coisas, mas percebi que precisaria de códigos que ainda não tive aula. Eu entendi
-       alguns deles, mas preferi utilizar somente o que foi ensinado na parte de iniciante mesmo.
-         Fiz primeiro no VSCode, pois tinha esquecido que precisava ser aqui no Github. O processo demorou 1.45 horas,
-       pois estava testando o fgetes(pesquisei sobre) e como aplica-lo ao código. Mas como foi sugerido utilizar
-       somente o que foi apresentado nas aulas, copiei tudo e colei aqui.
-      
-
-    /*Carta 1 e 2*/
     char Estado1[3], Codigo1[4], Nome1[50], Estado2[3], Codigo2[4], Nome2[50];
     int Populacao1, Populacao2, npturisticos1, npturisticos2; 
     float AreaKM1, PIB1, AreaKM2, PIB2; 
