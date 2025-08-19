@@ -27,18 +27,18 @@ int main(){
     printf("Digite o nome da cidade: \n");
     scanf(" %[^\n]", Nome1); // Pedi ajuda de um amigo para conseguir adicionar espaços sem utilização do Fgets ou outras ferramentas não vistas em aula.
 
-    printf("Digite a quantidade de pessoas(Ex: 1,5 para 1.500,000): \n");
+    printf("Digite a quantidade de pessoas(Ex: 1.5 para 1.500,000): \n");
     scanf("%f", &Populacao1);
     Populacao1 *= 1000000;
 
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &npturisticos1);
 
-    printf("Digite a área em KM²(Ex: 1,5 para 1.500,000 ou 250 para 250.000): \n");
+    printf("Digite a área em KM²(Ex: 1.5 para 1.500,000 ou 250 para 250.000): \n");
     scanf("%f", &AreaKM1);
     AreaKM1 *= 1000;
 
-    printf("Digite o PIB(Ex: 1,5 para 1.500,000 ou 250 para 250.000): \n");
+    printf("Digite o PIB(Ex: 1.5 para 1.500,000 ou 250 para 250.000): \n");
     scanf("%f", &PIB1);
     PIB1 *= 1000;
 
@@ -53,18 +53,18 @@ int main(){
     printf("Digite o nome da cidade: \n");
     scanf(" %[^\n]", Nome2); 
 
-    printf("Digite a quantidade de pessoas(Ex: 1,5 para 1.500,000): \n");
+    printf("Digite a quantidade de pessoas(Ex: 1.5 para 1.500,000): \n");
     scanf("%f", &Populacao2);
     Populacao2 *= 1000000;
 
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &npturisticos2);
 
-    printf("Digite a área em KM²(Ex: 1,5 para 1.500,000 ou 250 para 250.000): \n");
+    printf("Digite a área em KM²(Ex: 1.5 para 1.500,000 ou 250 para 250.000): \n");
     scanf("%f", &AreaKM2);
     AreaKM2 *= 1000;
 
-    printf("Digite o PIB(Ex: 1,5 para 1.500,000 ou 250 para 250.000): \n");
+    printf("Digite o PIB(Ex: 1.5 para 1.500,000 ou 250 para 250.000): \n");
     scanf("%f", &PIB2);
     PIB2 *= 1000;
 
