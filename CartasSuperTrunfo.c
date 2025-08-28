@@ -2,7 +2,7 @@
 #include <locale.h>
 
 // Acabei fazendo novamente via VSCODE e depois passando apra cá. 
-// Nos próximos trabalhos/exercícios, farei totalmente pelo github.
+// Nos próximos trabalhos/exercícios, farei totalmente pelo github!
 int main(){
     setlocale(LC_ALL, "Portuguese_Brazil");
     
