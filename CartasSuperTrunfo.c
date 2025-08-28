@@ -12,7 +12,7 @@ int main(){
     float densidade1, Pibper1, power1, densidade2, Pibper2, power2;
 
     printf("\n -------Carta 1------- \n");
-    prinft("Digite o código da carta: \n");
+    printf("Digite o código da carta: \n");
     scanf("%s", codigocarta1);
 
     printf("Digite o estado: \n");
@@ -56,12 +56,12 @@ int main(){
     printf("Digite o Pib: \n");
     scanf("%f", &pib2);
 
-    densidade1 = pib1 / areakm1;
+    densidade1 = populacao1 / areakm1;
     Pibper1 = pib1 / populacao1;
-    densidade2 = pib2 / areakm2;
+    densidade2 = populacao2 / areakm2;
     Pibper2 = pib2 / populacao2;
-    power1 = densidade1 + Pibper1;
-    power2 = densidade2 + Pibper2;
+    power1 = populacao1 + pontostu1 + areakm1 + Pibper1 + (1 / densidade1);
+    power2 = populacao2 + pontostu2 + areakm2 + Pibper2 + (1 / densidade2);
     // carta1
     printf("\n-----carta 1-----\n");
 
@@ -98,7 +98,7 @@ int main(){
     printf("Cidade: Carta 1 vence a carta 2: %d\n", nomecidade1[0] > nomecidade2[0]);
     printf("População: Carta 1 vence a carta 2: %u\n", populacao1 > populacao2);
     printf("Pontos Turísticos: Carta 1 vence a carta 2: %u\n", pontostu1 > pontostu2);
-    printf("Área por KM²: Carta 1 vence a carta 2: %.2f\n", areakm1 > areakm2);
+    printf("Área por KM²: Carta 1 vence a carta 2: %d\n", areakm1 > areakm2);
     printf("PIB: Carta 1 vence a carta 2: %d\n", pib1 > pib2);
     printf("PIB per capita: Carta 1 vence a carta 2: %d\n", Pibper1 > Pibper2);
     printf("Densidade Populacional: Carta 1 vence a carta 2: %d \n", densidade1 > densidade2);
