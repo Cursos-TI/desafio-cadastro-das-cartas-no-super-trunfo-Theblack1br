@@ -68,7 +68,7 @@ int main(){
     printf("Código da carta: %s\n", codigocarta1);
     printf("Estado: %s\n", estado1);
     printf("Cidade: %s\n", nomecidade1);
-    printf("Populaç?o: %u\n", populacao1);
+    printf("População: %u\n", populacao1);
     printf("Pontos Turísticos: %u\n", pontostu1);
     printf("Área por KM²: %.2f\n", areakm1);
     printf("PIB: %.2f\n", pib1);
@@ -81,22 +81,22 @@ int main(){
     printf("Código da carta: %s \n", codigocarta2);
     printf("Estado: %s\n", estado2);
     printf("Cidade: %s\n", nomecidade2);
-    printf("Populaç?o: %u\n", populacao2);
+    printf("População: %u\n", populacao2);
     printf("Pontos Turísticos: %u \n", pontostu2);
     printf("Área por KM²: %.2f\n", areakm2);
     printf("PIB: %.2f\n", pib2);
     printf("PIB per capita: %.2f\n", Pibper2);
     printf("Densidade Populacional: %.2f \n", densidade2);
     printf("Super Poder: %.2f\n ", power2);
-    ////////////// Comparaç?o //////////////////
+    ////////////// Comparação //////////////////
     printf("\n-----Vamos comparar as cartas. 1 para positivo e 0 para negativo-----\n");
     
     printf("Estado: Carta 1 vence a carta 2: %d\n", estado1[0] > estado2[0]); // Utilizei o [0] para gerar o valor da inicial no ASCII
-    printf("Estado: Carta 2 vence a carta 1: %d\n", estado1 [0] < estado2[0]); /*Como if e Else ainda n?o podem ser utilizados, decidi 
+    printf("Estado: Carta 2 vence a carta 1: %d\n", estado1 [0] < estado2[0]); /*Como if e Else ainda não podem ser utilizados, decidi 
                                                                                   repetir essa parte, pois o usuário pode acabar digitando 
                                                                                   estados iguais*/
     printf("Cidade: Carta 1 vence a carta 2: %d\n", nomecidade1[0] > nomecidade2[0]);
-    printf("Populaç?o: Carta 1 vence a carta 2: %u\n", populacao1 > populacao2);
+    printf("População: Carta 1 vence a carta 2: %u\n", populacao1 > populacao2);
     printf("Pontos Turísticos: Carta 1 vence a carta 2: %u\n", pontostu1 > pontostu2);
     printf("Área por KM²: Carta 1 vence a carta 2: %d\n", areakm1 > areakm2);
     printf("PIB: Carta 1 vence a carta 2: %d\n", pib1 > pib2);
@@ -104,7 +104,7 @@ int main(){
     printf("Densidade Populacional: Carta 1 vence a carta 2: %d \n", densidade1 > densidade2);
     printf("Super poder: Carta 1 vence a carta 2: %d\n", power1 > power2);
                                                                                 /*Utilizei o D, para que fosse impresso um número inteiro
-                                                                                  pois pensei que poderia ter alguma imprecis?o na hora de 
+                                                                                  pois pensei que poderia ter alguma imprecisão na hora de 
                                                                                   imprimir o resultado do combate de cartas*/
     
     return 0;
