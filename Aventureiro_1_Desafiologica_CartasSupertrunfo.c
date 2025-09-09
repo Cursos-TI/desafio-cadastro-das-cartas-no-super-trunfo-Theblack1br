@@ -107,7 +107,7 @@ int main(){
         printf("Digite aqui: ");
         scanf("%d", &opcaoEscolhida);
         
-        switch(opcaoEscolhida){  // Neste switch, chamei o resultado da "opcaoEscolhida" e utilizei a lógica para gerar o resultado de acordo com o que foi escolhido.
+        switch(opcaoEscolhida){ // Neste switch, chamei o resultado da "opcaoEscolhida" e utilizei a lógica para gerar o resultado de acordo com o que foi escolhido.
             case 1:
             printf("%s(%u) VS %s(%u)\n", nomecidade1, populacao1, nomecidade2, populacao2); // Dessa forma sai o nome da cidade e o valor que vai ser calculado no terminal.
             printf("\n");
@@ -117,7 +117,10 @@ int main(){
                     printf("Houve um empate\n");
                 }else{
                 printf("Carta %s venceu\n", nomecidade2);
-            }break;
+            }break; // Errei um pouco no uso do Break, mas a prática me ajudou a entender como funciona exatamente.
+            // Em todos os "case", fiz a estrutura de if, else if e else, para poder comparar e dar entrada no valor correto.
+            // No caso a lógica seguiu: Titulo do combate, tentar entrar com o dado do maior, caso não esteja correto buscar o empate
+            // e no caso de não haver empate, o else finaliza com a informação contrária as 2 primeiras.
             case 2:
             printf("%s(%u) VS %s(%u)\n", nomecidade1, pontostu1, nomecidade2, pontostu2);
             printf("\n");
